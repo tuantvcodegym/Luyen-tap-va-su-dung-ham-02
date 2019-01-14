@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 5</title>
+</head>
+<body>
+<script>
+    var n = prompt('Nhap number');
+    var n2 = prompt('Nhap number 2');
+    var n3 = prompt('Nhap number 3');
+    function timMin(a,b,c) {
+        var min = a;
+        if(b<min){
+            min =b
+            if(min<c){
+                min = min;
+            }else {
+                min = c;
+            }
+        }else {
+            min = min;
+        }
+        document.write(min + ' la so be nhat trong day so ' + a + ' ' + b + ' ' +c);
+    }
+    timMin(n,n2,n3);
+</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 2</title>
+</head>
+<body>
+<input type="text" id="input" />
+<select id ='all'>
+    <option value="mot">Dien tich</option>
+    <option value="hai">Chu vi</option>
+</select>
+<input type="button" onclick="dieuKien()" value="Ket Qua" />
+<div id="tuan"></div>
+<script>
+   function dienTich() {
+       var a = document.getElementById('input').value;
+       var area = (a*a)*3.14;
+       document.getElementById('tuan').innerHTML = area;
+   }
+   function chuVi() {
+       var a =document.getElementById('input').value;
+       var area = a*2*3.14;
+       document.getElementById('tuan').innerHTML =area;
+   }
+   function dieuKien() {
+       var b =document.getElementById('all').value;
+       if(b ==='mot'){
+           dienTich();
+       }else {
+           chuVi();
+       }
+   }
+</script>
+</body>
+</html>
